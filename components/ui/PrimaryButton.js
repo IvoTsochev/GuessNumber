@@ -6,7 +6,6 @@ import Colors from "../../constants/colors";
 export const PrimaryButton = ({ children, onPress }) => {
   const pressHandler = () => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    console.log("pressed");
     onPress();
   };
 
